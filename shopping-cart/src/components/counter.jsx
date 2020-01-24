@@ -1,8 +1,17 @@
 import React, { Component } from "react";
 
 class Counter extends Component {
+  componentDidUpdate(prevProps, PrevState) {
+    console.log("prevProps", prevProps);
+    console.log("PrevState", PrevState);
+  }
+
+  componentWillUnmount() {
+    console.log("Counter - Unmount");
+  }
+
   render() {
-    console.log("props", this.props);
+    console.log("Counter - Rendered");
 
     return (
       <div>
