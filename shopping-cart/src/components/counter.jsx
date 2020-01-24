@@ -26,7 +26,7 @@ class Counter extends Component {
 
   //use the let instead of const because it's being monified
   GetBadgeClasses() {
-    let classes = "badge m-2 badge-";
+    let classes = "badge-number badge m-2 badge-";
     classes += this.props.counter.value === 0 ? "warning" : "primary";
     return classes;
   }
